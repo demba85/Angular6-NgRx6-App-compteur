@@ -1,0 +1,23 @@
+<!-- <div>
+  <button (click)="increment()">+</button>
+  <button (click)="decrement()">-</button>................  {{total}}
+</div>
+
+
+<div *ngIf="allDetails">
+   <div *ngFor="let details of allDetails">
+     {{ details.date.toISOString() }} s'est produit un {{details.buttonClicked}}
+   </div>
+</div> -->
+
+<h3>{{title}}</h3>
+<div>
+  <button (click)="increment()">+</button>
+  <button (click)="decrement()">-</button>
+  {{total}}
+  <div *ngIf="allDetails">
+    <div *ngFor="let details of allDetails">
+      {{details.date.toISOString()}} s'est produit un {{details.buttonClicked}}
+    </div>
+  </div>
+</div>
